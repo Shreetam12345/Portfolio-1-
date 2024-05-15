@@ -1,0 +1,302 @@
+/* Basic styling */
+#main{
+    background-color: black;
+}
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 900ms;
+    width: 12px;
+    height: 12px;
+    border-radius: 80px 90px 100px 100px;
+    position: absolute;
+    z-index: 99999;
+    background-color: rgb(12, 174, 239);
+    box-shadow: 1px 1px 1px rgb(28, 237, 5);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#bgimg {
+    background-image: url(https://img.freepik.com/free-vector/wave-background-abstract-gradient-design_483537-3688.jpg);
+    background-size: contain;
+}
+/* Basic navbar styling */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    height: 50px;
+    border-radius: 8px;
+}
+#home {
+    color: white;
+    opacity: 0.7;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 40px;
+}
+#a {
+    padding-left: 40px;
+}
+.head {
+    padding-left: 20px;
+}
+.navbar a {
+    float: right;
+    display: block;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: transparent;
+    color: white;
+    opacity: 0.8;
+}
+
+/* Hamburger icon */
+.navbar .icon {
+    display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive a:not(.icon) {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+}
+
+.imgtag {
+    border: yellowgreen;
+    border-width: 10px;
+    border: 20px;
+    border-radius: 10px 40px 10px 40px;
+}
+.imgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.imgs1 {
+    background-color: transparent;
+    border-radius: 5px;
+    size: 20px;
+}
+.main-content {
+    padding: 20px;
+    border-radius: 7px;
+    padding-left: 20px;
+}
+/* Sections styling */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+section:nth-child(even) {
+    background-color: transparent;
+}
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+#about {
+    color: whitesmoke;
+    opacity: 0.6;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.img2 {
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px black;
+}
+
+/* CSS for grid layout */
+#about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+}
+.about1 {
+    padding-right: 30px;
+}
+
+/* Ensure the image fills its container */
+#about img {
+    max-width: 100%;
+    height: auto;
+}
+#icons a{
+    cursor: pointer;
+}
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 30px;
+    text-align: left;
+    opacity: 0.8;
+    color: whitesmoke;
+}
+
+/* Style for project titles */
+#projects h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+/* Responsive layout for small screens */
+@media screen and (max-width: 600px) {
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row > div {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .row > div {
+        width: 100%;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    border-radius: 40px;
+    opacity: 0.7;
+    color: antiquewhite;
+}
+
+#contact {
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+#contact h2 {
+    margin-bottom: 10px;
+}
+
+.icons {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.icons a:hover {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.menu-links {
+    display: none;
+}
+
+.menu-links a {
+    color: beige;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.menu-icon {
+    display: block;
+}
+
+@media screen and (min-width: 769px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .menu-links {
+        display: flex;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .menu-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .menu-links a {
+        display: block;
+        color: beige;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+
+
